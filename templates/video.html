@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Capture Image{% endblock title %}
+
+{% block body %}
+
+<h1>Take a photo of yourself</h1>
+{% load static %}
+<p><b>Press "SPACE" to capture image</b></p>
+<p><b>Press "ESC" to exit.</b></p>
+<img style="display: none;" src="{% url 'video_feed' %}">
+<br>
+<a href="{% url 'home' %}">Go back</a>
+<br><br>
+<a href="{% url 'image' %}">Show Image</a>
+
+{% endblock body %}

@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'index.css' %}">
+{% endblock css %}
+{% block body %}
+
+<div class="header-background">
+
+</div>
+
+<div class="container-fluid" id="contact">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-6 ">
+
+            <h2 class="contact-section ">Get In Touch</h2>
+            <p class="paragraph" style="text-align:left;">We are here to help you <strong>Monday to
+                    Saturday</strong>,from 8AM to 6PM.<br>Contact us via <strong>Phone:</strong>
+            </p>
+
+            <form id="contact-form">
+
+                <input type="text" id="name" class="form form control" placeholder="name" data-name="name" required
+                    style="width: 300;"><br><br>
+                <input type="email" id="email" class="form form control" placeholder="email id" data-name="emailaddress"
+                    required style="width: 300;"><br>
+                <br>
+
+                <input type="tel" id="phone" class="form form control" placeholder="phonenumber" data-name="phonenumber"
+                    required style="width: 300;"><br>
+                <br>
+
+                <a href="thankyou.html"> <button type="submit"
+                        style="background-color: rgb(252, 44, 3); height: 50px; width: 350px;padding-top: 2px; padding-left: 2px;padding-bottom: 5px;">Send
+                        Message</button></a><br><br>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="upload-form" id="upload">
+
+</div>
+
+<footer class="footer-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+                <h3>About Us</h3>
+                <p> Human Skintone is a platform which will help you in checking the skin color, and tells you the
+                    accurate color of your skin</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
+                <h2>Useful Links</h3>
+                    <ul>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+                <h2>Follow Us</h2>
+                <p>Please Follow us on Our social Media for get updated about the new Features</p>
+                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
+                <h2>Types of skins</h2>
+                <ul>
+                    <li><a href="#">Dark Skin</a></li>
+                    <li><a href="#">Mild Skin</a></li>
+                    <li><a href="#">Fair Skin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer class="footer-bottom-text">
+    <p style="text-align: center;">All Right Reserved by &copy;Human Skintone.2021</p>
+</footer>
+{% endblock body %}
