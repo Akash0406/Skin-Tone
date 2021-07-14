@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Capture Image{% endblock title %}
+
+{% block body %}
+<h1>Download Image!</h1>
+    <img src="{% static 'images/opencv_frame_0.png' %}">
+    <br>
+<h2><b>Right click on image to save image in your device</b></h2>
+<br>
+<a href="{% url 'upload' %}">Upload Image</a>
+{% endblock body %}
